@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let name1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let name2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let name = prompt("Nhap ten ngoi sao:");
+
+    function findName(name) {
+        if (name1.indexOf(name) === -1) {
+            document.write("khong tim thay ngoi sao");
+        } else {
+            for (let i = 0; i < name1.length; i++) {
+                if (name === name1[i]){
+                    result = name2[i];
+                    return result;
+                }
+            }
+        }
+    }
+
+    findName(name);
+    document.write("Chòm sao = " + result);
+</script>
+
+</body>
+</html>
