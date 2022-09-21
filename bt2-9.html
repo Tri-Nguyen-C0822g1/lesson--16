@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  let num = Number(prompt("Nhập số lượng phần tử"))
+  for (let i = 0; i < num ; i++){
+   let item1 = prompt("Nhập phần tử của mảng");
+   arr.push(item1);
+  }
+  let item2 = prompt("Nhập phần tử ần kiểm tra");
+  let count = 0;
+  function checkValue (){
+    for (let i = 0; i <= arr.length; i++){
+      if (item2 === arr[i]){
+        count += 1;
+      }
+     }
+    if (count === 0){
+      return "-1";
+
+    }else {
+      return count;
+    }
+  }
+alert(checkValue ());
+</script>
+</body>
+</html>

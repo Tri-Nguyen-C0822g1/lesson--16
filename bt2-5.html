@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a, b, c;
+
+    do {
+        a = Number(prompt("Nhập số thứ 1:"));
+    }
+    while (!a);
+
+    do {
+        b = Number(prompt("Nhập số thứ 2:"));
+    }
+    while (!b);
+
+    do {
+        c = Number(prompt("Nhập số thứ 3:"));
+    }
+    while (!c);
+
+    let arr = [a, b, c];
+    let min = a;
+
+    function findMin(min) {
+       for (let i = 1; i < arr.length; i++){
+       if ( min > arr[i]){
+           min = arr[i];
+       }
+       } return min;
+    }
+    findMin(min);
+    alert(findMin(min));
+
+</script>
+</body>
+</html>

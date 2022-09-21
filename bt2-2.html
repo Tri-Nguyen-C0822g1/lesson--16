@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let radius;
+  let perimeter, area;
+  do {
+      radius = Number(prompt("Nhập bán kính:"));
+  } while (!radius || radius <= 0);
+
+
+  function findPerimeter (radius) {
+    perimeter = radius*2*3.14;
+    return  perimeter;
+  }
+  function findArea(radius){
+      area = radius*radius*3.14;
+      return area;
+  }
+  findArea(radius);
+  findPerimeter(radius);
+  alert ("Chu vi:" + perimeter + "  " + "Diện tích:" + area);
+</script>
+</body>
+</html>

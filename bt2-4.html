@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let value = prompt("Nhâp vào giá trị cần kiểm tra:");
+
+  function check(){
+    if (isNaN(value)){
+     result = "Giá trị không phải số";
+     return result;
+    }else {
+      result = "Giá trị là 1 số";
+      return result;
+    }
+  }
+  check();
+  alert(result);
+</script>
+</body>
+</html>
